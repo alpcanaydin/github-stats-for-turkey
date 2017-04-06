@@ -1,0 +1,5 @@
+server/node_modules
+server/config.json
+server/output/*
+!server/output/.gitkeep
+.DS_Store
