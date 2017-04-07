@@ -24,6 +24,11 @@ const main = async () => {
   });
 
   await usersCollection.bulkWrite(bulkOperations);
+
+  const query = { stars: { $exists: false } };
+  const update = { $set: { stars: 0 } };
+  const options = { multi: true };
+  await usersCollection.update(query, update, options);
   db.close();
   console.log('All done!');
 };

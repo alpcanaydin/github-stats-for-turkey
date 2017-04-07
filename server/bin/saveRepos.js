@@ -2,7 +2,6 @@ const monk = require('monk');
 
 const config = require('../config.json');
 const repos = require('../output/repos.json');
-const users = require('../output/users_detailed.json');
 
 const db = monk(config.mongodb);
 
@@ -14,10 +13,7 @@ const main = async () => {
   const promises = [];
 
   repos.forEach(repo => {
-    // SHAME: Lessons learned! Plan your mapper carefully next time.
-    const currentUser = users.find(user => repo.user === user.username);
-    const data = Object.assign({}, repo, { city: currentUser.city });
-    promises.push(reposCollection.insert(data));
+    promises.push(reposCollection.insert(repo));
     console.log(`${repo.fullName} added to queue`);
   });
 
