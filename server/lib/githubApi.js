@@ -7,7 +7,7 @@ class Github {
   constructor(options) {
     this.options = options;
 
-    this.tokens = config.tokens;
+    this.tokens = [...config.tokens];
     this.currentToken = -1;
 
     this.create();
@@ -25,7 +25,6 @@ class Github {
 
   create() {
     this.github = new GithubApi(this.options);
-    console.log('Github instance created.');
 
     const token = this.pickToken();
     console.log(`Picked a token. ${token}`);
@@ -75,6 +74,60 @@ class Github {
       };
 
       search(1);
+    });
+  }
+
+  getUser(user) {
+    const username = user.username;
+
+    return new Promise(resolve => {
+      const fetch = () => {
+        this.github.users.getForUser({ username }, (err, response) => {
+          if (err) {
+            if (err.code === 404) {
+              console.log(`${username} skipped.`);
+              resolve(null);
+              return;
+            }
+
+            console.log(err.message);
+            this.create();
+            fetch();
+            return;
+          }
+
+          console.log(`Details fetched for ${username}`);
+          resolve(Object.assign({}, response.data, { city: user.city }));
+        });
+      };
+
+      fetch();
+    });
+  }
+
+  getRepos(username) {
+    return new Promise(resolve => {
+      const fetch = () => {
+        this.github.repos.getForUser({ username }, (err, response) => {
+          if (err) {
+            if (err.code === 404) {
+              console.log(`${username} skipped.`);
+              resolve(null);
+              return;
+            }
+
+            console.log(err.message);
+            this.create();
+            fetch();
+            return;
+          }
+
+          console.log(`Details fetched for ${username} repos`);
+          resolve(response.data.filter(repo => !repo.fork));
+        });
+      };
+
+      fetch();
     });
   }
 }
