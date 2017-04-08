@@ -13,9 +13,12 @@
   },
   "scripts": {
     "start": "node app.js",
+    "lint": "eslint .",
     "fmt": "prettier --print-width=100 --single-quote --trailing-comma all --write \"/**/*.js\""
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
     "express": "^4.15.2",
     "github": "^9.2.0",
     "moment": "^2.18.1",

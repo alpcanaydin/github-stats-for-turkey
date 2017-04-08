@@ -107,8 +107,12 @@ class Github {
 
   getRepos(username) {
     return new Promise(resolve => {
-      const fetch = () => {
-        this.github.repos.getForUser({ username }, (err, response) => {
+      const output = [];
+
+      const fetch = (page = 1) => {
+        this.github.repos.getForUser({ username, page }, (err, response) => {
+          console.log(`Page ${page} is fetching ${username}`);
+
           if (err) {
             if (err.code === 404) {
               console.log(`${username} skipped.`);
@@ -122,12 +126,19 @@ class Github {
             return;
           }
 
-          console.log(`Details fetched for ${username} repos`);
-          resolve(response.data.filter(repo => !repo.fork));
+          const data = response.data.filter(repo => !repo.fork);
+          output.push(...data);
+
+          if (this.github.hasNextPage(response)) {
+            fetch(page + 1);
+          } else {
+            console.log(`All pages fetched for ${username}`);
+            resolve(output);
+          }
         });
       };
 
-      fetch();
+      fetch(1);
     });
   }
 }

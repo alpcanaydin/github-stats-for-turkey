@@ -14,7 +14,10 @@ const main = async () => {
 
   users.forEach(user => {
     console.log(`${user.username} added to queue`);
-    promises.push(usersCollection.insert(user));
+
+    // SHAME: Don't forget to lowercase your unique keys.
+    const userData = Object.assign({}, user, { username: user.username.toLowerCase() });
+    promises.push(usersCollection.insert(userData));
   });
 
   await Promise.all(promises);
