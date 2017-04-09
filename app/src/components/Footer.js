@@ -7,15 +7,34 @@ const Footer = () => (
         <strong>Github Türkiye İstatisikleri</strong>
         <p>
           <small>
-            Kaynak kodları <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-            &nbsp;ile lisanslanmıştır.
+            Kaynak kodları
+            {' '}
+            <a
+              href="http://opensource.org/licenses/mit-license.php"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MIT
+            </a>
+            {' '}
+            ile lisanslanmıştır.
           </small>
         </p>
         <p>
-          <a className="icon is-dark" href="https://github.com/alpcanaydin/github-stats-for-turkey">
+          <a
+            className="icon"
+            href="https://github.com/alpcanaydin/github-stats-for-turkey"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa fa-github" />
           </a>
-          <a className="icon is-dark" href="https://twitter.com/alpcanaydin">
+          <a
+            className="icon"
+            href="https://twitter.com/alpcanaydin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fa fa-twitter" />
           </a>
         </p>

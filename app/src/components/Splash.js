@@ -24,7 +24,7 @@ const Splash = ({ data: turkey }) => (
           </Scrollchor>
 
           <a
-            href="/deneme"
+            href="https://medium.com/alpcanaydin/github-turkiye-istatistikleri"
             target="_blank"
             rel="noopener noreferrer"
             className="button is-link is-medium"
