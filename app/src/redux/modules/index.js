@@ -3,9 +3,11 @@ import { routerReducer } from 'react-router-redux';
 
 import initial from './initial';
 import location from './location';
+import developer from './developer';
 
 export default combineReducers({
   router: routerReducer,
   initial,
   location,
+  developer,
 });

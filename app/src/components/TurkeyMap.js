@@ -38,7 +38,7 @@ class TurkeyMap extends Component {
 
     this.populateCity = this.populateCity.bind(this);
     this.handleCityClick = this.handleCityClick.bind(this);
-    this.handleCityMouseOver = this.handleCityMouseOver.bind(this);
+    this.handleCityMouseMove = this.handleCityMouseMove.bind(this);
     this.handleCityMouseOut = this.handleCityMouseOut.bind(this);
   }
 
@@ -76,11 +76,18 @@ class TurkeyMap extends Component {
     this.props.dispatch(push(`/location/${city.id}`));
   }
 
-  handleCityMouseOver(city, top, left) {
+  handleCityMouseMove(city, top, left) {
+    if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) {
+      return;
+    }
+
     this.setState({ hoveredCity: { city, top, left } });
   }
 
   handleCityMouseOut() {
+    if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) {
+      return;
+    }
     this.setState({ hoveredCity: { city: null, top: 0, left: 0 } });
   }
 
@@ -102,7 +109,7 @@ class TurkeyMap extends Component {
               key={city.id}
               data={city}
               onClick={this.handleCityClick}
-              onMouseOver={this.handleCityMouseOver}
+              onMouseMove={this.handleCityMouseMove}
               onMouseOut={this.handleCityMouseOut}
             />
           ))}

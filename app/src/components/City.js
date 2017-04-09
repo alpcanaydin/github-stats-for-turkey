@@ -14,7 +14,7 @@ class City extends Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
-    this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseMove = this.handleMouseMove.bind(this);
     this.handleMouseOut = this.handleMouseOut.bind(this);
   }
 
@@ -35,9 +35,9 @@ class City extends Component {
     this.props.onClick(data);
   }
 
-  handleMouseOver(event) {
+  handleMouseMove(event) {
     const { data } = this.props;
-    this.props.onMouseOver(data, event.pageY + 25, event.pageX);
+    this.props.onMouseMove(data, event.pageY, event.pageX + 25);
   }
 
   handleMouseOut() {
@@ -53,7 +53,7 @@ class City extends Component {
         id={data.id}
         name={data.name}
         className="CityG"
-        onMouseOver={this.handleMouseOver}
+        onMouseMove={this.handleMouseMove}
         onMouseOut={this.handleMouseOut}
         onClick={this.handleClick}
       >
@@ -88,7 +88,7 @@ City.propTypes = {
     repos: PropTypes.number.isRequired,
   }).isRequired,
   onClick: PropTypes.func.isRequired,
-  onMouseOver: PropTypes.func.isRequired,
+  onMouseMove: PropTypes.func.isRequired,
   onMouseOut: PropTypes.func.isRequired,
 };
 

@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
-const LocationMostStarredRepos = ({ name, data }) => (
+const DeveloperTopStarredRepos = ({ data }) => (
   <div>
     <h1 className="title">En Çok Star Alan Repolar</h1>
     <h2 className="subtitle">
-      {name} için en çok kullanılan star almış repolar
+      Bu geliştiricinin en çok start alan repoları
     </h2>
     <hr />
 
@@ -15,25 +14,23 @@ const LocationMostStarredRepos = ({ name, data }) => (
         <thead>
           <tr>
             <th style={{ width: '10%' }}>Sıra</th>
-            <th style={{ width: '20%' }}>Geliştirici</th>
             <th style={{ width: '40%' }}>Repo</th>
             <th style={{ width: '20%' }}>Dil</th>
-            <th style={{ width: '10%' }}>Star</th>
-            <th style={{ width: '10%' }}>Fork</th>
+            <th style={{ width: '15%' }}>Star</th>
+            <th style={{ width: '15%' }}>Fork</th>
           </tr>
         </thead>
         <tbody>
           {data.map((repo, index) => (
             <tr key={repo.fullName}>
               <th>{index + 1}</th>
-              <td><Link to={`/developer/${repo.user}`}>{repo.user}</Link></td>
               <td>
                 <a
                   href={`https://github.com/${repo.fullName}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {repo.fullName}
+                  {repo.name}
                 </a>
               </td>
               <td>{repo.language || '-'}</td>
@@ -48,9 +45,8 @@ const LocationMostStarredRepos = ({ name, data }) => (
   </div>
 );
 
-LocationMostStarredRepos.propTypes = {
-  name: PropTypes.string.isRequired,
+DeveloperTopStarredRepos.propTypes = {
   data: PropTypes.array.isRequired,
 };
 
-export default LocationMostStarredRepos;
+export default DeveloperTopStarredRepos;
