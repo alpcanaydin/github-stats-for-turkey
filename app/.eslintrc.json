@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "import",
+    "prettier",
+    "react",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 100,
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+.CityTooltip {
+  position: absolute;
+  z-index: 2;
+
+  > div {
+    border-radius: 8px;
+  }
+
+  .icon {
+    padding-right: 15px;
+  }
+}

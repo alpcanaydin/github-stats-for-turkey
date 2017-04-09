@@ -1,0 +1,23 @@
+.Splash {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/stars.svg);
+
+  .title {
+    padding-bottom: 5px;
+  }
+
+  .subtitle {
+    padding-bottom: 15px;
+  }
+
+  .hero-buttons {
+    justify-content: inherit;
+  }
+
+  @media only screen and (min-width : 992px) {
+    .subtitle {
+      width: 50%;
+    }
+  }
+}

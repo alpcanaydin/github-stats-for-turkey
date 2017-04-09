@@ -19,6 +19,6 @@ app.use((req, res, next) => {
 });
 app.use('/', routes);
 
-app.listen(3000, () => {
+app.listen(3001, () => {
   console.log('API is running.');
 });

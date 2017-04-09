@@ -1,0 +1,63 @@
+{
+  "name": "github-stats-for-turkey",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "https://alpcanaydin.github.io/turkeygithub-stats-for-turkey",
+  "contributors": [
+    "Alpcan Aydın <alpcan@alpcanaydin.com>"
+  ],
+  "keywords": [
+    "github",
+    "turkey",
+    "react",
+    "redux"
+  ],
+  "dependencies": {
+    "apisauce": "^0.11.0",
+    "bulma": "^0.4.0",
+    "history": "^4.6.1",
+    "polished": "^1.0.2",
+    "prop-types": "^15.5.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0",
+    "react-router-redux": "next",
+    "react-scrollchor": "^2.2.0",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-prettier": "^1.5.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "eslint-plugin-react": "^6.10.3",
+    "lint-staged": "^3.4.0",
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "prettier": "^0.22.0",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "build-css": "node-sass src/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "fmt": "prettier --print-width=100 --single-quote --trailing-comma all --write \"{src,__{tests,mocks}__}/**/*.js\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run fmt",
+      "git add"
+    ]
+  }
+}

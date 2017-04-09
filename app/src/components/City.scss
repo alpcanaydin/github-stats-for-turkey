@@ -1,0 +1,14 @@
+.CityG {
+  cursor: pointer;
+
+  text {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &:hover {
+    path {
+      fill-opacity: 0.8;
+    }
+  }
+}

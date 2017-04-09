@@ -1,0 +1,1152 @@
+{
+  "locations": [
+    {
+      "_id": "58e813dc217942065ba8d155",
+      "location": "adana",
+      "topLanguage": "C#",
+      "users": 77,
+      "repos": 159
+    },
+    {
+      "_id": "58e813dc217942065ba8d156",
+      "location": "adiyaman",
+      "topLanguage": null,
+      "users": 5,
+      "repos": 2
+    },
+    {
+      "_id": "58e813dc217942065ba8d157",
+      "location": "afyonkarahisar",
+      "topLanguage": "PHP",
+      "users": 13,
+      "repos": 5
+    },
+    {
+      "_id": "58e813dc217942065ba8d158",
+      "location": "agri",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 4
+    },
+    {
+      "_id": "58e813dc217942065ba8d159",
+      "location": "amasya",
+      "topLanguage": "CSS",
+      "users": 5,
+      "repos": 14
+    },
+    {
+      "_id": "58e813dc217942065ba8d15a",
+      "location": "ankara",
+      "topLanguage": "Java",
+      "users": 1835,
+      "repos": 4895
+    },
+    {
+      "_id": "58e813dc217942065ba8d15b",
+      "location": "antalya",
+      "topLanguage": "JavaScript",
+      "users": 240,
+      "repos": 488
+    },
+    {
+      "_id": "58e813dc217942065ba8d15c",
+      "location": "artvin",
+      "topLanguage": "Ruby",
+      "users": 2,
+      "repos": 3
+    },
+    {
+      "_id": "58e813dc217942065ba8d15d",
+      "location": "aydin",
+      "topLanguage": "C#",
+      "users": 25,
+      "repos": 76
+    },
+    {
+      "_id": "58e813dc217942065ba8d15e",
+      "location": "balikesir",
+      "topLanguage": "PHP",
+      "users": 29,
+      "repos": 54
+    },
+    {
+      "_id": "58e813dc217942065ba8d15f",
+      "location": "bilecik",
+      "topLanguage": null,
+      "users": 3,
+      "repos": 5
+    },
+    {
+      "_id": "58e813dc217942065ba8d160",
+      "location": "bingol",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d161",
+      "location": "bitlis",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d162",
+      "location": "bolu",
+      "topLanguage": "Ruby",
+      "users": 9,
+      "repos": 36
+    },
+    {
+      "_id": "58e813dc217942065ba8d163",
+      "location": "burdur",
+      "topLanguage": "Java",
+      "users": 8,
+      "repos": 14
+    },
+    {
+      "_id": "58e813dc217942065ba8d164",
+      "location": "bursa",
+      "topLanguage": "PHP",
+      "users": 215,
+      "repos": 342
+    },
+    {
+      "_id": "58e813dc217942065ba8d165",
+      "location": "canakkale",
+      "topLanguage": "Python",
+      "users": 57,
+      "repos": 176
+    },
+    {
+      "_id": "58e813dc217942065ba8d166",
+      "location": "cankiri",
+      "topLanguage": "CSS",
+      "users": 2,
+      "repos": 2
+    },
+    {
+      "_id": "58e813dc217942065ba8d167",
+      "location": "corum",
+      "topLanguage": "Java",
+      "users": 9,
+      "repos": 16
+    },
+    {
+      "_id": "58e813dc217942065ba8d168",
+      "location": "denizli",
+      "topLanguage": "Ruby",
+      "users": 128,
+      "repos": 506
+    },
+    {
+      "_id": "58e813dc217942065ba8d169",
+      "location": "diyarbakir",
+      "topLanguage": "Java",
+      "users": 7,
+      "repos": 27
+    },
+    {
+      "_id": "58e813dc217942065ba8d16a",
+      "location": "edirne",
+      "topLanguage": "C#",
+      "users": 24,
+      "repos": 41
+    },
+    {
+      "_id": "58e813dc217942065ba8d16b",
+      "location": "elazig",
+      "topLanguage": "Java",
+      "users": 22,
+      "repos": 86
+    },
+    {
+      "_id": "58e813dc217942065ba8d16c",
+      "location": "erzincan",
+      "topLanguage": "JavaScript",
+      "users": 5,
+      "repos": 11
+    },
+    {
+      "_id": "58e813dc217942065ba8d16d",
+      "location": "erzurum",
+      "topLanguage": "CSS",
+      "users": 15,
+      "repos": 20
+    },
+    {
+      "_id": "58e813dc217942065ba8d16e",
+      "location": "eskisehir",
+      "topLanguage": "Java",
+      "users": 164,
+      "repos": 398
+    },
+    {
+      "_id": "58e813dc217942065ba8d16f",
+      "location": "gaziantep",
+      "topLanguage": "PHP",
+      "users": 41,
+      "repos": 38
+    },
+    {
+      "_id": "58e813dc217942065ba8d170",
+      "location": "giresun",
+      "topLanguage": "Swift",
+      "users": 4,
+      "repos": 9
+    },
+    {
+      "_id": "58e813dc217942065ba8d171",
+      "location": "gumushane",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d172",
+      "location": "hakkari",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d173",
+      "location": "hatay",
+      "topLanguage": "PHP",
+      "users": 13,
+      "repos": 23
+    },
+    {
+      "_id": "58e813dc217942065ba8d174",
+      "location": "isparta",
+      "topLanguage": "Java",
+      "users": 43,
+      "repos": 78
+    },
+    {
+      "_id": "58e813dc217942065ba8d175",
+      "location": "mersin",
+      "topLanguage": "CSS",
+      "users": 44,
+      "repos": 65
+    },
+    {
+      "_id": "58e813dc217942065ba8d176",
+      "location": "istanbul",
+      "topLanguage": "Java",
+      "users": 7470,
+      "repos": 19944
+    },
+    {
+      "_id": "58e813dc217942065ba8d177",
+      "location": "izmir",
+      "topLanguage": "Java",
+      "users": 851,
+      "repos": 2312
+    },
+    {
+      "_id": "58e813dc217942065ba8d178",
+      "location": "kars",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d179",
+      "location": "kastamonu",
+      "topLanguage": "PHP",
+      "users": 6,
+      "repos": 5
+    },
+    {
+      "_id": "58e813dc217942065ba8d17a",
+      "location": "kayseri",
+      "topLanguage": "PHP",
+      "users": 71,
+      "repos": 94
+    },
+    {
+      "_id": "58e813dc217942065ba8d17b",
+      "location": "kirklareli",
+      "topLanguage": "Ruby",
+      "users": 3,
+      "repos": 16
+    },
+    {
+      "_id": "58e813dc217942065ba8d17c",
+      "location": "kirsehir",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d17d",
+      "location": "kocaeli",
+      "topLanguage": "Java",
+      "users": 159,
+      "repos": 426
+    },
+    {
+      "_id": "58e813dc217942065ba8d17e",
+      "location": "konya",
+      "topLanguage": "JavaScript",
+      "users": 105,
+      "repos": 161
+    },
+    {
+      "_id": "58e813dc217942065ba8d17f",
+      "location": "kutahya",
+      "topLanguage": "Java",
+      "users": 17,
+      "repos": 30
+    },
+    {
+      "_id": "58e813dc217942065ba8d180",
+      "location": "malatya",
+      "topLanguage": "CSS",
+      "users": 19,
+      "repos": 47
+    },
+    {
+      "_id": "58e813dc217942065ba8d181",
+      "location": "manisa",
+      "topLanguage": "C#",
+      "users": 46,
+      "repos": 101
+    },
+    {
+      "_id": "58e813dc217942065ba8d182",
+      "location": "kahramanmaras",
+      "topLanguage": "C#",
+      "users": 10,
+      "repos": 7
+    },
+    {
+      "_id": "58e813dc217942065ba8d183",
+      "location": "mardin",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d184",
+      "location": "mugla",
+      "topLanguage": "Java",
+      "users": 57,
+      "repos": 141
+    },
+    {
+      "_id": "58e813dc217942065ba8d185",
+      "location": "mus",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d186",
+      "location": "nevsehir",
+      "topLanguage": "PHP",
+      "users": 10,
+      "repos": 14
+    },
+    {
+      "_id": "58e813dc217942065ba8d187",
+      "location": "nigde",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 4
+    },
+    {
+      "_id": "58e813dc217942065ba8d188",
+      "location": "ordu",
+      "topLanguage": "C#",
+      "users": 11,
+      "repos": 12
+    },
+    {
+      "_id": "58e813dc217942065ba8d189",
+      "location": "rize",
+      "topLanguage": "HTML",
+      "users": 12,
+      "repos": 24
+    },
+    {
+      "_id": "58e813dc217942065ba8d18a",
+      "location": "sakarya",
+      "topLanguage": "Java",
+      "users": 95,
+      "repos": 251
+    },
+    {
+      "_id": "58e813dc217942065ba8d18b",
+      "location": "samsun",
+      "topLanguage": "Ruby",
+      "users": 117,
+      "repos": 360
+    },
+    {
+      "_id": "58e813dc217942065ba8d18c",
+      "location": "siirt",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d18d",
+      "location": "sinop",
+      "topLanguage": "JavaScript",
+      "users": 28,
+      "repos": 42
+    },
+    {
+      "_id": "58e813dc217942065ba8d18e",
+      "location": "sivas",
+      "topLanguage": "Java",
+      "users": 25,
+      "repos": 60
+    },
+    {
+      "_id": "58e813dc217942065ba8d18f",
+      "location": "tekirdag",
+      "topLanguage": "PHP",
+      "users": 28,
+      "repos": 73
+    },
+    {
+      "_id": "58e813dc217942065ba8d190",
+      "location": "tokat",
+      "topLanguage": null,
+      "users": 7,
+      "repos": 4
+    },
+    {
+      "_id": "58e813dc217942065ba8d191",
+      "location": "trabzon",
+      "topLanguage": "JavaScript",
+      "users": 80,
+      "repos": 278
+    },
+    {
+      "_id": "58e813dc217942065ba8d192",
+      "location": "tunceli",
+      "topLanguage": "PHP",
+      "users": 2,
+      "repos": 9
+    },
+    {
+      "_id": "58e813dc217942065ba8d193",
+      "location": "sanliurfa",
+      "topLanguage": null,
+      "users": 11,
+      "repos": 6
+    },
+    {
+      "_id": "58e813dc217942065ba8d194",
+      "location": "usak",
+      "topLanguage": "C++",
+      "users": 1,
+      "repos": 6
+    },
+    {
+      "_id": "58e813dc217942065ba8d195",
+      "location": "van",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d196",
+      "location": "yozgat",
+      "topLanguage": "Scala",
+      "users": 6,
+      "repos": 12
+    },
+    {
+      "_id": "58e813dc217942065ba8d197",
+      "location": "zonguldak",
+      "topLanguage": "Python",
+      "users": 12,
+      "repos": 12
+    },
+    {
+      "_id": "58e813dc217942065ba8d198",
+      "location": "aksaray",
+      "topLanguage": "Ruby",
+      "users": 5,
+      "repos": 10
+    },
+    {
+      "_id": "58e813dc217942065ba8d199",
+      "location": "bayburt",
+      "topLanguage": "C",
+      "users": 2,
+      "repos": 21
+    },
+    {
+      "_id": "58e813dc217942065ba8d19a",
+      "location": "karaman",
+      "topLanguage": null,
+      "users": 3,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d19b",
+      "location": "kirikkale",
+      "topLanguage": "C",
+      "users": 2,
+      "repos": 5
+    },
+    {
+      "_id": "58e813dc217942065ba8d19c",
+      "location": "batman",
+      "topLanguage": null,
+      "users": 3,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d19d",
+      "location": "sirnak",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d19e",
+      "location": "bartin",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 1
+    },
+    {
+      "_id": "58e813dc217942065ba8d19f",
+      "location": "ardahan",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d1a0",
+      "location": "igdir",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d1a1",
+      "location": "yalova",
+      "topLanguage": "Python",
+      "users": 17,
+      "repos": 33
+    },
+    {
+      "_id": "58e813dc217942065ba8d1a2",
+      "location": "karabuk",
+      "topLanguage": "Java",
+      "users": 23,
+      "repos": 53
+    },
+    {
+      "_id": "58e813dc217942065ba8d1a3",
+      "location": "kilis",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e813dc217942065ba8d1a4",
+      "location": "osmaniye",
+      "topLanguage": "HTML",
+      "users": 2,
+      "repos": 1
+    },
+    {
+      "_id": "58e813dc217942065ba8d1a5",
+      "location": "duzce",
+      "topLanguage": "Python",
+      "users": 14,
+      "repos": 18
+    },
+    {
+      "_id": "58e813dc217942065ba8d1a6",
+      "location": "turkey",
+      "topLanguage": "Java",
+      "users": 12384,
+      "repos": 32186
+    },
+    {
+      "_id": "58e8b45005da883de4e3a242",
+      "location": "adana",
+      "topLanguage": "C#",
+      "users": 77,
+      "repos": 161
+    },
+    {
+      "_id": "58e8b45005da883de4e3a243",
+      "location": "adiyaman",
+      "topLanguage": null,
+      "users": 5,
+      "repos": 2
+    },
+    {
+      "_id": "58e8b45005da883de4e3a244",
+      "location": "afyonkarahisar",
+      "topLanguage": "PHP",
+      "users": 13,
+      "repos": 5
+    },
+    {
+      "_id": "58e8b45005da883de4e3a245",
+      "location": "agri",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 4
+    },
+    {
+      "_id": "58e8b45005da883de4e3a246",
+      "location": "amasya",
+      "topLanguage": "CSS",
+      "users": 5,
+      "repos": 18
+    },
+    {
+      "_id": "58e8b45005da883de4e3a247",
+      "location": "ankara",
+      "topLanguage": "Java",
+      "users": 1835,
+      "repos": 5352
+    },
+    {
+      "_id": "58e8b45005da883de4e3a248",
+      "location": "antalya",
+      "topLanguage": "JavaScript",
+      "users": 240,
+      "repos": 625
+    },
+    {
+      "_id": "58e8b45005da883de4e3a249",
+      "location": "artvin",
+      "topLanguage": "Ruby",
+      "users": 2,
+      "repos": 3
+    },
+    {
+      "_id": "58e8b45005da883de4e3a24a",
+      "location": "aydin",
+      "topLanguage": "C#",
+      "users": 25,
+      "repos": 84
+    },
+    {
+      "_id": "58e8b45005da883de4e3a24b",
+      "location": "balikesir",
+      "topLanguage": "PHP",
+      "users": 29,
+      "repos": 54
+    },
+    {
+      "_id": "58e8b45005da883de4e3a24c",
+      "location": "bilecik",
+      "topLanguage": null,
+      "users": 3,
+      "repos": 5
+    },
+    {
+      "_id": "58e8b45005da883de4e3a24d",
+      "location": "bingol",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a24e",
+      "location": "bitlis",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a24f",
+      "location": "bolu",
+      "topLanguage": "Ruby",
+      "users": 9,
+      "repos": 36
+    },
+    {
+      "_id": "58e8b45005da883de4e3a250",
+      "location": "burdur",
+      "topLanguage": "Java",
+      "users": 8,
+      "repos": 14
+    },
+    {
+      "_id": "58e8b45005da883de4e3a251",
+      "location": "bursa",
+      "topLanguage": "PHP",
+      "users": 215,
+      "repos": 375
+    },
+    {
+      "_id": "58e8b45005da883de4e3a252",
+      "location": "canakkale",
+      "topLanguage": "Python",
+      "users": 57,
+      "repos": 191
+    },
+    {
+      "_id": "58e8b45005da883de4e3a253",
+      "location": "cankiri",
+      "topLanguage": "CSS",
+      "users": 2,
+      "repos": 2
+    },
+    {
+      "_id": "58e8b45005da883de4e3a254",
+      "location": "corum",
+      "topLanguage": "Java",
+      "users": 9,
+      "repos": 16
+    },
+    {
+      "_id": "58e8b45005da883de4e3a255",
+      "location": "denizli",
+      "topLanguage": "Ruby",
+      "users": 128,
+      "repos": 565
+    },
+    {
+      "_id": "58e8b45005da883de4e3a256",
+      "location": "diyarbakir",
+      "topLanguage": "Java",
+      "users": 7,
+      "repos": 30
+    },
+    {
+      "_id": "58e8b45005da883de4e3a257",
+      "location": "edirne",
+      "topLanguage": "C#",
+      "users": 24,
+      "repos": 40
+    },
+    {
+      "_id": "58e8b45005da883de4e3a258",
+      "location": "elazig",
+      "topLanguage": "Java",
+      "users": 22,
+      "repos": 86
+    },
+    {
+      "_id": "58e8b45005da883de4e3a259",
+      "location": "erzincan",
+      "topLanguage": "JavaScript",
+      "users": 5,
+      "repos": 11
+    },
+    {
+      "_id": "58e8b45005da883de4e3a25a",
+      "location": "erzurum",
+      "topLanguage": "CSS",
+      "users": 15,
+      "repos": 20
+    },
+    {
+      "_id": "58e8b45005da883de4e3a25b",
+      "location": "eskisehir",
+      "topLanguage": "Java",
+      "users": 164,
+      "repos": 430
+    },
+    {
+      "_id": "58e8b45005da883de4e3a25c",
+      "location": "gaziantep",
+      "topLanguage": "PHP",
+      "users": 41,
+      "repos": 38
+    },
+    {
+      "_id": "58e8b45005da883de4e3a25d",
+      "location": "giresun",
+      "topLanguage": "Swift",
+      "users": 4,
+      "repos": 10
+    },
+    {
+      "_id": "58e8b45005da883de4e3a25e",
+      "location": "gumushane",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a25f",
+      "location": "hakkari",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a260",
+      "location": "hatay",
+      "topLanguage": "C#",
+      "users": 13,
+      "repos": 23
+    },
+    {
+      "_id": "58e8b45005da883de4e3a261",
+      "location": "isparta",
+      "topLanguage": "Java",
+      "users": 43,
+      "repos": 78
+    },
+    {
+      "_id": "58e8b45005da883de4e3a262",
+      "location": "mersin",
+      "topLanguage": "CSS",
+      "users": 44,
+      "repos": 68
+    },
+    {
+      "_id": "58e8b45005da883de4e3a263",
+      "location": "istanbul",
+      "topLanguage": "Java",
+      "users": 7470,
+      "repos": 22267
+    },
+    {
+      "_id": "58e8b45005da883de4e3a264",
+      "location": "izmir",
+      "topLanguage": "Java",
+      "users": 850,
+      "repos": 2485
+    },
+    {
+      "_id": "58e8b45005da883de4e3a265",
+      "location": "kars",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a266",
+      "location": "kastamonu",
+      "topLanguage": "C#",
+      "users": 6,
+      "repos": 5
+    },
+    {
+      "_id": "58e8b45005da883de4e3a267",
+      "location": "kayseri",
+      "topLanguage": "PHP",
+      "users": 71,
+      "repos": 94
+    },
+    {
+      "_id": "58e8b45005da883de4e3a268",
+      "location": "kirklareli",
+      "topLanguage": "Ruby",
+      "users": 3,
+      "repos": 16
+    },
+    {
+      "_id": "58e8b45005da883de4e3a269",
+      "location": "kirsehir",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a26a",
+      "location": "kocaeli",
+      "topLanguage": "Java",
+      "users": 160,
+      "repos": 496
+    },
+    {
+      "_id": "58e8b45005da883de4e3a26b",
+      "location": "konya",
+      "topLanguage": "JavaScript",
+      "users": 105,
+      "repos": 201
+    },
+    {
+      "_id": "58e8b45005da883de4e3a26c",
+      "location": "kutahya",
+      "topLanguage": "Java",
+      "users": 17,
+      "repos": 30
+    },
+    {
+      "_id": "58e8b45005da883de4e3a26d",
+      "location": "malatya",
+      "topLanguage": "PHP",
+      "users": 19,
+      "repos": 47
+    },
+    {
+      "_id": "58e8b45005da883de4e3a26e",
+      "location": "manisa",
+      "topLanguage": "C#",
+      "users": 47,
+      "repos": 107
+    },
+    {
+      "_id": "58e8b45005da883de4e3a26f",
+      "location": "kahramanmaras",
+      "topLanguage": "C#",
+      "users": 10,
+      "repos": 7
+    },
+    {
+      "_id": "58e8b45005da883de4e3a270",
+      "location": "mardin",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a271",
+      "location": "mugla",
+      "topLanguage": "Python",
+      "users": 56,
+      "repos": 130
+    },
+    {
+      "_id": "58e8b45005da883de4e3a272",
+      "location": "mus",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a273",
+      "location": "nevsehir",
+      "topLanguage": "PHP",
+      "users": 10,
+      "repos": 14
+    },
+    {
+      "_id": "58e8b45005da883de4e3a274",
+      "location": "nigde",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 4
+    },
+    {
+      "_id": "58e8b45005da883de4e3a275",
+      "location": "ordu",
+      "topLanguage": "C#",
+      "users": 11,
+      "repos": 12
+    },
+    {
+      "_id": "58e8b45005da883de4e3a276",
+      "location": "rize",
+      "topLanguage": "HTML",
+      "users": 12,
+      "repos": 24
+    },
+    {
+      "_id": "58e8b45005da883de4e3a277",
+      "location": "sakarya",
+      "topLanguage": "Java",
+      "users": 95,
+      "repos": 264
+    },
+    {
+      "_id": "58e8b45005da883de4e3a278",
+      "location": "samsun",
+      "topLanguage": "Ruby",
+      "users": 117,
+      "repos": 366
+    },
+    {
+      "_id": "58e8b45005da883de4e3a279",
+      "location": "siirt",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a27a",
+      "location": "sinop",
+      "topLanguage": "JavaScript",
+      "users": 28,
+      "repos": 42
+    },
+    {
+      "_id": "58e8b45005da883de4e3a27b",
+      "location": "sivas",
+      "topLanguage": "Java",
+      "users": 25,
+      "repos": 72
+    },
+    {
+      "_id": "58e8b45005da883de4e3a27c",
+      "location": "tekirdag",
+      "topLanguage": "PHP",
+      "users": 28,
+      "repos": 74
+    },
+    {
+      "_id": "58e8b45005da883de4e3a27d",
+      "location": "tokat",
+      "topLanguage": null,
+      "users": 7,
+      "repos": 4
+    },
+    {
+      "_id": "58e8b45005da883de4e3a27e",
+      "location": "trabzon",
+      "topLanguage": "JavaScript",
+      "users": 80,
+      "repos": 293
+    },
+    {
+      "_id": "58e8b45005da883de4e3a27f",
+      "location": "tunceli",
+      "topLanguage": "PHP",
+      "users": 2,
+      "repos": 9
+    },
+    {
+      "_id": "58e8b45005da883de4e3a280",
+      "location": "sanliurfa",
+      "topLanguage": "Makefile",
+      "users": 11,
+      "repos": 7
+    },
+    {
+      "_id": "58e8b45005da883de4e3a281",
+      "location": "usak",
+      "topLanguage": "C++",
+      "users": 2,
+      "repos": 8
+    },
+    {
+      "_id": "58e8b45005da883de4e3a282",
+      "location": "van",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a283",
+      "location": "yozgat",
+      "topLanguage": "Scala",
+      "users": 6,
+      "repos": 12
+    },
+    {
+      "_id": "58e8b45005da883de4e3a284",
+      "location": "zonguldak",
+      "topLanguage": "Python",
+      "users": 12,
+      "repos": 12
+    },
+    {
+      "_id": "58e8b45005da883de4e3a285",
+      "location": "aksaray",
+      "topLanguage": "Ruby",
+      "users": 5,
+      "repos": 10
+    },
+    {
+      "_id": "58e8b45005da883de4e3a286",
+      "location": "bayburt",
+      "topLanguage": "C",
+      "users": 2,
+      "repos": 21
+    },
+    {
+      "_id": "58e8b45005da883de4e3a287",
+      "location": "karaman",
+      "topLanguage": null,
+      "users": 3,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a288",
+      "location": "kirikkale",
+      "topLanguage": "C",
+      "users": 2,
+      "repos": 5
+    },
+    {
+      "_id": "58e8b45005da883de4e3a289",
+      "location": "batman",
+      "topLanguage": null,
+      "users": 3,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a28a",
+      "location": "sirnak",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a28b",
+      "location": "bartin",
+      "topLanguage": null,
+      "users": 2,
+      "repos": 1
+    },
+    {
+      "_id": "58e8b45005da883de4e3a28c",
+      "location": "ardahan",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a28d",
+      "location": "igdir",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a28e",
+      "location": "yalova",
+      "topLanguage": "Python",
+      "users": 17,
+      "repos": 34
+    },
+    {
+      "_id": "58e8b45005da883de4e3a28f",
+      "location": "karabuk",
+      "topLanguage": "Java",
+      "users": 22,
+      "repos": 51
+    },
+    {
+      "_id": "58e8b45005da883de4e3a290",
+      "location": "kilis",
+      "topLanguage": null,
+      "users": 0,
+      "repos": 0
+    },
+    {
+      "_id": "58e8b45005da883de4e3a291",
+      "location": "osmaniye",
+      "topLanguage": "HTML",
+      "users": 2,
+      "repos": 1
+    },
+    {
+      "_id": "58e8b45005da883de4e3a292",
+      "location": "duzce",
+      "topLanguage": "Python",
+      "users": 14,
+      "repos": 18
+    }
+  ],
+  "turkey": {
+    "_id": "58e813dc217942065ba8d1a6",
+    "location": "turkey",
+    "topLanguage": "Java",
+    "users": 12384,
+    "repos": 32186
+  }
+}
