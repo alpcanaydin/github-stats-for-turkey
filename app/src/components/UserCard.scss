@@ -1,0 +1,13 @@
+.UserCard {
+  .githubLink, .footerLink {
+    color: #4a4a4a;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .card-footer-item {
+    font-size: 14px;
+  }
+}

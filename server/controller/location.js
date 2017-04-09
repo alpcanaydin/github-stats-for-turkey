@@ -3,6 +3,7 @@ const topRankedUsersAgg = require('../aggs/location/topRankedUsers');
 const topStarredUsersAgg = require('../aggs/location/topStarredUsers');
 const topFollowedUsersAgg = require('../aggs/location/topFollowedUsers');
 const topStarredReposAgg = require('../aggs/location/topStarredRepos');
+const getPositionAgg = require('../aggs/location/getPosition');
 
 module.exports = async (req, res) => {
   const locationParam = req.params.location;
@@ -19,6 +20,9 @@ module.exports = async (req, res) => {
     topStarredUsersAgg(req.db, locationParam),
     topFollowedUsersAgg(req.db, locationParam),
     topStarredReposAgg(req.db, locationParam),
+    getPositionAgg(req.db, locationParam, 'score'),
+    getPositionAgg(req.db, locationParam, 'stars'),
+    getPositionAgg(req.db, locationParam, 'followers'),
   ];
 
   // prettier-ignore
@@ -28,6 +32,9 @@ module.exports = async (req, res) => {
     topStarredUsers,
     topFollowedUsers,
     topStarredRepos,
+    scorePosition,
+    starsPosition,
+    followersPosition,
   ] = await Promise.all(promises);
 
   res.json({
@@ -38,6 +45,11 @@ module.exports = async (req, res) => {
       topStarredUsers,
       topFollowedUsers,
       topStarredRepos,
+    },
+    positions: {
+      score: scorePosition,
+      stars: starsPosition,
+      followers: followersPosition,
     },
   });
 };

@@ -1,4 +1,4 @@
-module.exports = async (db, location, limit = 50) => {
+module.exports = async (db, location, limit = 30) => {
   const defaultMatch = { language: { $ne: null } };
   const cityMatch = location === 'turkey' ? {} : { city: location };
 

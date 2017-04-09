@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './routes/Home';
 import LocationDetail from './routes/LocationDetail';
 
+import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/location/:location" component={LocationDetail} />
+      <Route component={NotFound} />
     </Switch>
     <Footer />
   </div>

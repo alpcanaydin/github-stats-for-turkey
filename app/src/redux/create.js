@@ -17,7 +17,9 @@ const configureStore = (preloadedState, history) => {
 
   if (process.env.NODE_ENV === 'development') {
     /* eslint-disable */
-    composed.push(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+    if (window.navigator.userAgent.includes('Chrome')) {
+      composed.push(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+    }
     /* eslint-enable */
   }
 

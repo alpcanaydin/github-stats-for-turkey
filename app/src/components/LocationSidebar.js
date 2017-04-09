@@ -9,12 +9,12 @@ const LocationSidebar = ({ params }) => (
     </p>
     <ul className="menu-list">
       <li>
-        <NavLink to={`/location/${params.location}/general`} activeClassName="is-active">
+        <NavLink exact to={`/location/${params.location}`} activeClassName="is-active">
           Genel Bilgiler
         </NavLink>
       </li>
       <li>
-        <NavLink to={`/location/${params.location}/languages`} activeClassName="is-active">
+        <NavLink exact to={`/location/${params.location}/languages`} activeClassName="is-active">
           Dil Kullanımı
         </NavLink>
       </li>
@@ -23,14 +23,32 @@ const LocationSidebar = ({ params }) => (
       Geliştiriciler
     </p>
     <ul className="menu-list">
-      <li><a>En Çok Star Alan Geliştiriciler</a></li>
-      <li><a>En Çok Takip Edilen Geliştiriciler</a></li>
+      <NavLink
+        exact
+        to={`/location/${params.location}/most-starred-developers`}
+        activeClassName="is-active"
+      >
+        En Çok Star Alan Geliştiriciler
+      </NavLink>
+      <NavLink
+        exact
+        to={`/location/${params.location}/most-followed-developers`}
+        activeClassName="is-active"
+      >
+        En Çok Takip Edilen Geliştiriciler
+      </NavLink>
     </ul>
     <p className="menu-label">
       Repolar
     </p>
     <ul className="menu-list">
-      <li><a>En Çok Star Alan Repolar</a></li>
+      <NavLink
+        exact
+        to={`/location/${params.location}/most-starred-repos`}
+        activeClassName="is-active"
+      >
+        En Çok Star Alan Repolar
+      </NavLink>
     </ul>
   </aside>
 );
