@@ -39,7 +39,18 @@ class Nav extends Component {
 
           <div className={`nav-right nav-menu ${isMobileMenuOpened && 'is-active'}`}>
             <span className="nav-item">
-              <a className="button is-dark">
+              <Link to="/?where=cities">Şehirler</Link>
+            </span>
+            <span className="nav-item">
+              <Link to="/?where=developers">Geliştirici Ara</Link>
+            </span>
+            <span className="nav-item">
+              <a
+                href="https://github.com/alpcanaydin/github-stats-for-turkey"
+                className="button is-dark"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Kaynak Kodları
               </a>
             </span>

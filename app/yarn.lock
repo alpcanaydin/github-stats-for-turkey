@@ -3916,6 +3916,10 @@ minimist@1.2.0, minimist@>=0.2.0, minimist@^1.1.1, minimist@^1.1.3, minimist@^1.
   dependencies:
     minimist "0.0.8"
 
+moveto@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/moveto/-/moveto-1.6.0.tgz#98611d0283062d813aa09c9616108c111a8d90a7"
+
 ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -4943,10 +4947,6 @@ react-scripts@0.9.5:
     whatwg-fetch "2.0.2"
   optionalDependencies:
     fsevents "1.0.17"
-
-react-scrollchor@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-scrollchor/-/react-scrollchor-2.2.0.tgz#ca6b21962ca4bde85216041250b47d438a351e6c"
 
 react@^15.4.2:
   version "15.5.3"

@@ -1148,5 +1148,17 @@
     "topLanguage": "Java",
     "users": 12384,
     "repos": 32186
-  }
+  },
+  "topUsers": [
+    "fatih",
+    "needim",
+    "iammert",
+    "seyhunak",
+    "emre",
+    "f",
+    "countly",
+    "ademilter",
+    "cemolcay",
+    "hazelcast"
+  ]
 }
