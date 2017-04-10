@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Share from './Share';
+
 const Footer = () => (
   <footer className="footer">
     <div className="container">
@@ -38,6 +40,7 @@ const Footer = () => (
             <i className="fa fa-twitter" />
           </a>
         </p>
+        <Share />
         <p>
           <small>Veri en son <strong>8 Nisan 2017</strong> tarihinde çekilmiştir.</small>
         </p>
