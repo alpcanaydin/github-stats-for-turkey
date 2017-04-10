@@ -13,7 +13,8 @@ class UserSearch extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit() {
+  handleSubmit(event) {
+    event.preventDefault();
     const username = this.username.value;
     this.props.dispatch(push(`/developer/${username}`));
   }
