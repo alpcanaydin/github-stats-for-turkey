@@ -23,7 +23,7 @@ export const request = developer =>
     dispatch({ type: REQUEST, developer });
 
     try {
-      const { data } = await api.get(`/user/${developer}`);
+      const { data } = await api.get(`/user/${developer.toLowerCase()}`);
       dispatch(success(developer, data));
     } catch (err) {
       dispatch(fail(developer, err.message));
