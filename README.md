@@ -1,6 +1,6 @@
 # Github Türkiye İstatistikleri
 
-Github üzerinde lokasyonu Türkiye olarak gözüken **12,384** geliştirici ve **35,591** repo üzerinde gerçekleştirilen bir istatistik çalışmasıdır.
+Github üzerinde konumu Türkiye olarak gözüken **12,384** geliştirici ve **35,591** repo üzerinde gerçekleştirilen bir istatistik çalışmasıdır.
 
 https://alpcanaydin.github.io/github-stats-for-turkey
 
