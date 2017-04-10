@@ -38,7 +38,7 @@ class Splash extends Component {
               Github Türkiye İstatistikleri
             </p>
             <p className="subtitle">
-              Bu çalışma Github üzerinde lokasyonu Türkiye olarak gözüken
+              Bu çalışma Github üzerinde konumu Türkiye olarak gözüken
               {' '}
               <strong>{turkey.users.toLocaleString()}</strong>
               {' '}
