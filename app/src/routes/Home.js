@@ -20,6 +20,10 @@ const Home = ({ location, locations, turkey, topUsers }) => (
           <h2 className="subtitle has-text-centered">
             Detaylı bilgi için şehirlere tıklayabilirsiniz. Tüm Türkiye verisi
             için <Link to="/location/turkey">tıklayınız</Link>.
+            <br />
+            <small>
+              Geliştirici verileri için aşağıya kaydırın.
+            </small>
           </h2>
           <TurkeyMap stats={locations} />
         </div>

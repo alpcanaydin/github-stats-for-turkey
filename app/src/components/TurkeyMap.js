@@ -8,6 +8,8 @@ import CityTooltip from './CityTooltip';
 
 import svgCities from '../data/svgCities.json';
 
+import './TurkeyMap.css';
+
 class TurkeyMap extends Component {
   constructor(props) {
     super(props);
@@ -95,7 +97,7 @@ class TurkeyMap extends Component {
     const { cities, hoveredCity } = this.state;
 
     return (
-      <div>
+      <div className="svgContainer">
         {hoveredCity.city &&
           <CityTooltip city={hoveredCity.city} top={hoveredCity.top} left={hoveredCity.left} />}
         <svg

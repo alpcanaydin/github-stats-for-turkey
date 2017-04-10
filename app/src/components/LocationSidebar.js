@@ -23,6 +23,9 @@ const LocationSidebar = ({ params }) => (
       Geliştiriciler
     </p>
     <ul className="menu-list">
+      <NavLink exact to={`/location/${params.location}/ranking`} activeClassName="is-active">
+        Sıralama
+      </NavLink>
       <NavLink
         exact
         to={`/location/${params.location}/most-starred-developers`}

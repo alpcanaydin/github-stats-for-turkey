@@ -25,7 +25,9 @@ const LocationGeneral = ({ name, data, positions }) => (
       {name !== 'Türkiye' &&
         <div className="column is-6">
           <div className="box has-text-centered">
-            <p className="title">{positions.score.toLocaleString()}.</p>
+            <p className="title">
+              {positions.score > 0 ? `${positions.score.toLocaleString()}.` : '-'}
+            </p>
             <p className="subtitle">En Aktif Şehir</p>
           </div>
         </div>}

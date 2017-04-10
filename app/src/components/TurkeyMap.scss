@@ -1,0 +1,21 @@
+@media screen and (min-width: 1000px) {
+  .svgContainer {
+    margin: 0 auto;
+    max-width: 930px;
+    width: 930px;
+  }
+}
+
+@media screen and (min-width: 1192px) {
+  .svgContainer {
+    max-width: 952px;
+    width: 952px;
+  }
+}
+
+@media screen and (min-width: 1384px) {
+  .svgContainer {
+    max-width: 1144px;
+    width: 1144px;
+  }
+}

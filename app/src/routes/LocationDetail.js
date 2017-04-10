@@ -10,6 +10,7 @@ import { request, fail } from '../redux/modules/location';
 
 import LocationGeneral from './LocationGeneral';
 import LocationLanguage from './LocationLanguage';
+import LocationRanking from './LocationRanking';
 import LocationMostStarredDevelopers from './LocationMostStarredDevelopers';
 import LocationMostFollowedDevelopers from './LocationMostFollowedDevelopers';
 import LocationMostStarredRepos from './LocationMostStarredRepos';
@@ -75,6 +76,16 @@ class LocationDetail extends Component {
               <LocationLanguage
                 name={this.currentCity.name}
                 data={location.data.stats.topLanguages}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/location/:location/ranking"
+            render={() => (
+              <LocationRanking
+                name={this.currentCity.name}
+                data={location.data.stats.topRankedUsers}
               />
             )}
           />
