@@ -2,7 +2,7 @@
   "name": "github-stats-for-turkey",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://alpcanaydin.github.io/turkeygithub-stats-for-turkey",
+  "homepage": "https://alpcanaydin.github.io/github-stats-for-turkey",
   "contributors": [
     "Alpcan Aydın <alpcan@alpcanaydin.com>"
   ],
@@ -52,7 +52,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "fmt": "prettier --print-width=100 --single-quote --trailing-comma all --write \"{src,__{tests,mocks}__}/**/*.js\"",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "lint-staged": {
     "*.js": [
