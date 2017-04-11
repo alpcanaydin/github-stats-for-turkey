@@ -24,16 +24,16 @@ class TurkeyMap extends Component {
     };
 
     this.languages = {
-      php: '#666699',
+      php: '#7048e8',
       'c#': '#71AAD7',
-      css: '#E34E24',
-      java: '#3471C0',
-      javascript: '#F0DB4F',
-      ruby: '#91221a',
-      python: '#c68f09',
+      css: '#ff922b',
+      java: '#1c7cd6',
+      javascript: '#ffd43b',
+      ruby: '#e03131',
+      python: '#fab005',
       swift: '#FD4A33',
-      html: '#ff9460',
-      'c++': '#01766D',
+      html: '#ffa94d',
+      'c++': '#0ca678',
       scala: '#b55451',
       c: '#A8B9CC',
     };
@@ -59,7 +59,7 @@ class TurkeyMap extends Component {
 
     if (!city) {
       return {
-        fill: '#777',
+        fill: '#868e96',
         topLanguage: 'Bilinmiyor',
         users: 0,
         repos: 0,
@@ -67,7 +67,7 @@ class TurkeyMap extends Component {
     }
 
     return {
-      fill: city.topLanguage ? this.languages[city.topLanguage.toLowerCase()] : '#777',
+      fill: city.topLanguage ? this.languages[city.topLanguage.toLowerCase()] : '#868e96',
       topLanguage: city.topLanguage,
       users: city.users,
       repos: city.repos,
