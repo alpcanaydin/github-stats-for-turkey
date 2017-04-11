@@ -43,3 +43,10 @@ React uygulamasını kurmak için ise sırasıyla aşağıdaki komutları `app` 
 yarn
 yarn start
 ```
+
+Eğer sadece `React` uygulamasında geliştirme yapacaksanız uygulamayı aşağıdaki komutla başlatarak API'yı direkt
+çalışır hale getirebilirsiniz:
+
+```bash
+REACT_APP_API_URL=https://github-stats.alpcanaydin.com yarn start
+```
