@@ -6,8 +6,12 @@ import { Link } from 'react-router-dom';
 import Splash from '../components/Splash';
 import TurkeyMap from '../components/TurkeyMap';
 import UserSearch from '../components/UserSearch';
+import YearRange from '../components/YearRange';
+import { filterByYear } from '../redux/modules/location/list';
+import { API_STATUS } from '../util/api';
+import { isLoading } from '../util/stateHelpers';
 
-const Home = ({ location, locations, turkey, topUsers }) => (
+const Home = ({ dispatch, location, locations, turkey, topUsers }) => (
   <div>
     <Splash data={turkey} location={location} />
 
@@ -25,7 +29,15 @@ const Home = ({ location, locations, turkey, topUsers }) => (
               Geliştirici verileri için aşağıya kaydırın.
             </small>
           </h2>
-          <TurkeyMap stats={locations} />
+
+          <TurkeyMap stats={locations.data} loading={isLoading(locations)} />
+
+          <YearRange
+            disabled={isLoading(locations)}
+            min={locations.filters.year.min}
+            max={locations.filters.year.max}
+            onChange={filter => { dispatch(filterByYear(filter)); }}
+          />
         </div>
       </div>
     </section>
@@ -37,14 +49,18 @@ const Home = ({ location, locations, turkey, topUsers }) => (
 );
 
 Home.propTypes = {
-  locations: PropTypes.array.isRequired,
+  locations: PropTypes.shape({
+    data: PropTypes.array,
+    status: PropTypes.oneOf(Object.keys(API_STATUS)),
+    filter: PropTypes.object,
+  }).isRequired,
   turkey: PropTypes.object.isRequired,
   topUsers: PropTypes.array.isRequired,
   location: PropTypes.object.isRequired,
 };
 
 export default connect(state => ({
-  locations: state.initial.locations,
+  locations: state.location.list,
   turkey: state.initial.turkey,
   topUsers: state.initial.topUsers,
 }))(Home);
