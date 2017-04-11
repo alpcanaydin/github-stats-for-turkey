@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 
 import { emptyStateItem, isInit, isLoading, isFailed } from '../util/stateHelpers';
-import { request, fail } from '../redux/modules/location';
+import { request, fail } from '../redux/modules/location/detail';
 
 import LocationGeneral from './LocationGeneral';
 import LocationLanguage from './LocationLanguage';
@@ -164,7 +164,7 @@ LocationDetail.propTypes = {
 
 export default connect(
   (state, { match }) => ({
-    location: state.location[match.params.location] || emptyStateItem,
+    location: state.location.detail[match.params.location] || emptyStateItem,
   }),
   dispatch => bindActionCreators({ request, fail }, dispatch),
 )(LocationDetail);

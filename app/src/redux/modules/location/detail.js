@@ -1,9 +1,9 @@
-import api, { API_STATUS } from '../../util/api';
+import api, { API_STATUS } from '../../../util/api';
 
 // Actions
-const REQUEST = 'location/REQUEST';
-const SUCCESS = 'location/SUCCESS';
-const FAIL = 'location/FAIL';
+const REQUEST = 'location/detail/REQUEST';
+const SUCCESS = 'location/detail/SUCCESS';
+const FAIL = 'location/detail/FAIL';
 
 // Action Creators
 export const success = (location, data) => ({
