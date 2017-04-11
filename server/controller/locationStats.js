@@ -10,15 +10,18 @@ module.exports = async (req, res) => {
     return;
   }
 
-  if (minYear && !/\d{4}/.test(minYear)) {
+  if (minYear && !/^\d{4}$/.test(minYear)) {
     res.json({ message: 'Not a valid min year. ex: 2016.' });
     return;
   }
 
-  if (maxYear && !/\d{4}/.test(maxYear)) {
+  if (maxYear && !/^\d{4}$/.test(maxYear)) {
     res.json({ message: 'Not a valid min year. ex: 2016.' });
     return;
   }
+
+  const min = parseInt(minYear, 10);
+  const max = parseInt(maxYear, 10) + 1;
 
   const locations = await req.db.get('locations').find({});
 
@@ -26,9 +29,9 @@ module.exports = async (req, res) => {
   locations.forEach(location => {
     const cityPromise = Promise.all([
       location,
-      yearLanguageRankingsAgg(req.db, location.location, minYear, maxYear),
-      yearUserCountsAgg(req.db, location.location, minYear, maxYear),
-      yearRepoCountsAgg(req.db, location.location, minYear, maxYear),
+      yearLanguageRankingsAgg(req.db, location.location, min, max),
+      yearUserCountsAgg(req.db, location.location, min, max),
+      yearRepoCountsAgg(req.db, location.location, min, max),
     ]);
     promises.push(cityPromise);
   });

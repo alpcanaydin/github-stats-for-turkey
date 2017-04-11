@@ -77,7 +77,9 @@ class TurkeyMap extends Component {
     }
 
     return {
-      fill: city.topLanguage ? this.languages[city.topLanguage.toLowerCase()] || '#868e96' : '#868e96',
+      fill: city.topLanguage
+        ? this.languages[city.topLanguage.toLowerCase()] || '#868e96'
+        : '#868e96',
       topLanguage: city.topLanguage,
       users: city.users,
       repos: city.repos,

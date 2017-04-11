@@ -2,7 +2,7 @@ import { locations as initialData } from '../../../data/initial.json';
 import api, { API_STATUS } from '../../../util/api';
 
 const filters = {
-  year: { type: 'RANGE', min: 2008, max: 2017 }
+  year: { type: 'RANGE', min: 2008, max: 2017 },
 };
 
 // Actions
@@ -11,9 +11,11 @@ const SUCCESS = 'location/list/SUCCESS';
 const FAIL = 'location/list/FAIL';
 
 // Action Creators
-export const success = data => ({
+export const success = (data, min, max) => ({
   type: SUCCESS,
   data,
+  min,
+  max,
 });
 
 export const fail = error => ({
@@ -23,11 +25,8 @@ export const fail = error => ({
 
 export const filterByYear = ({ min, max }) =>
   async dispatch => {
-    if (
-      min === filters.year.min &&
-      max === filters.year.max
-    ) {
-      dispatch(success(initialData));
+    if (min === filters.year.min && max === filters.year.max) {
+      dispatch(success(initialData, min, max));
 
       return;
     }
@@ -41,7 +40,7 @@ export const filterByYear = ({ min, max }) =>
         throw new Error(response.data || response.problem);
       }
 
-      dispatch(success(response.data.locations));
+      dispatch(success(response.data.locations, min, max));
     } catch (err) {
       dispatch(fail(err.message));
     }
@@ -51,10 +50,10 @@ export const filterByYear = ({ min, max }) =>
 const initialState = {
   status: API_STATUS.FETCHED,
   data: initialData,
-  filters
+  filters,
 };
 
-export default (state = initialState, { type, data, error }) => {
+export default (state = initialState, { type, data, min, max, error }) => {
   switch (type) {
     case REQUEST:
       return {
@@ -66,6 +65,9 @@ export default (state = initialState, { type, data, error }) => {
         ...state,
         status: API_STATUS.FETCHED,
         data,
+        filters: {
+          year: { type: 'RANGE', min, max },
+        },
       };
     case FAIL:
       return {

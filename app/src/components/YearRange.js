@@ -5,63 +5,95 @@ class YearRange extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { value: { min: props.min, max: props.max } };
+    this.state = {
+      value: { min: props.min, max: props.max },
+      buttonDisabled: false,
+    };
 
     this.updateValue = this.updateValue.bind(this);
     this.onChange = this.onChange.bind(this);
+  }
+
+  onChange() {
+    if (typeof this.props.onChange === 'function') {
+      this.props.onChange(this.state.value);
+    }
   }
 
   updateValue(field) {
     return event => {
       const value = parseInt(event.target.value, 10);
 
-      this.setState(
-        (state) => ({
-          ...state,
-          value: { ...state.value, [field]: value }
-        })
-      );
+      this.setState(state => ({
+        ...state,
+        value: { ...state.value, [field]: value },
+        buttonDisabled: !/^\d{4}$/.test(value),
+      }));
     };
-  }
-
-  onChange() {
-    if ('function' === typeof this.props.onChange) {
-      this.props.onChange(this.state.value);
-    }
   }
 
   render() {
     const { disabled, min, max } = this.props;
+    const { buttonDisabled } = this.state;
 
     return (
-      <div style={{ paddingTop: 20 }} className="columns is-centered">
-        <p className="column is-3">
-          <input
-            type="number" className="input" min={min} max={this.state.value.max - 1}
-            value={this.state.value.min} onChange={this.updateValue('min')} />
-        </p>
+      <div style={{ paddingTop: 20 }} className="columns">
+        <div className="column is-half is-offset-one-quarter">
+          <div className="columns is-multiline">
+            <div className="column is-4">
+              <strong>
+                <small>Min. içeren yıl</small>
+              </strong>
+              <input
+                type="number"
+                className="input"
+                min={min}
+                max={this.state.value.max - 1}
+                value={this.state.value.min}
+                onChange={this.updateValue('min')}
+              />
+            </div>
 
-        <p className="column is-3">
-          <input
-            type="number" className="input" min={this.state.value.min + 1} max={max}
-            value={this.state.value.max} onChange={this.updateValue('max')} />
-        </p>
+            <div className="column is-4">
+              <strong>
+                <small>Maks. içeren yıl</small>
+              </strong>
+              <input
+                type="number"
+                className="input"
+                min={this.state.value.min + 1}
+                max={max}
+                value={this.state.value.max}
+                onChange={this.updateValue('max')}
+              />
+            </div>
 
-        <p className="column is-2">
-          <button className="button is-primary" onClick={this.onChange} disabled={disabled}>
-            Ara
-          </button>
-        </p>
+            <div className="column is-4">
+              <strong>&nbsp;</strong>
+              <button
+                className="button is-primary is-fullwidth"
+                onClick={this.onChange}
+                disabled={disabled || buttonDisabled}
+              >
+                Filtrele
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
+YearRange.defaultProps = {
+  disabled: false,
+};
+
 YearRange.propTypes = {
   min: PropTypes.number.isRequired,
   max: PropTypes.number.isRequired,
   disabled: PropTypes.bool,
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default YearRange;

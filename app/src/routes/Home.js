@@ -24,19 +24,16 @@ const Home = ({ dispatch, location, locations, turkey, topUsers }) => (
           <h2 className="subtitle has-text-centered">
             Detaylı bilgi için şehirlere tıklayabilirsiniz. Tüm Türkiye verisi
             için <Link to="/location/turkey">tıklayınız</Link>.
-            <br />
-            <small>
-              Geliştirici verileri için aşağıya kaydırın.
-            </small>
           </h2>
 
           <TurkeyMap stats={locations.data} loading={isLoading(locations)} />
-
           <YearRange
             disabled={isLoading(locations)}
             min={locations.filters.year.min}
             max={locations.filters.year.max}
-            onChange={filter => { dispatch(filterByYear(filter)); }}
+            onChange={filter => {
+              dispatch(filterByYear(filter));
+            }}
           />
         </div>
       </div>
@@ -49,6 +46,7 @@ const Home = ({ dispatch, location, locations, turkey, topUsers }) => (
 );
 
 Home.propTypes = {
+  dispatch: PropTypes.func.isRequired,
   locations: PropTypes.shape({
     data: PropTypes.array,
     status: PropTypes.oneOf(Object.keys(API_STATUS)),
