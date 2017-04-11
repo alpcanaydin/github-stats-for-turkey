@@ -16,8 +16,7 @@ const LanguageMostStarredRepos = ({ name, data }) => (
           <tr>
             <th style={{ width: '10%' }}>Sıra</th>
             <th style={{ width: '20%' }}>Geliştirici</th>
-            <th style={{ width: '40%' }}>Repo</th>
-            <th style={{ width: '20%' }}>Dil</th>
+            <th style={{ width: '60%' }}>Repo</th>
             <th style={{ width: '10%' }}>Star</th>
             <th style={{ width: '10%' }}>Fork</th>
           </tr>
@@ -36,7 +35,6 @@ const LanguageMostStarredRepos = ({ name, data }) => (
                   {repo.fullName}
                 </a>
               </td>
-              <td>{repo.language || '-'}</td>
               <td>{repo.stars.toLocaleString()}</td>
               <td>{repo.forks.toLocaleString()}</td>
             </tr>
