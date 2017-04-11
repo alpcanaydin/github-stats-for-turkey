@@ -42,6 +42,9 @@ class Nav extends Component {
               <Link to="/?where=cities">Şehirler</Link>
             </span>
             <span className="nav-item">
+              <Link to="/?where=languages">Diller</Link>
+            </span>
+            <span className="nav-item">
               <Link to="/?where=developers">Geliştirici Ara</Link>
             </span>
             <span className="nav-item">

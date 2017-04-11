@@ -31,6 +31,11 @@ module.exports = async (req, res) => {
     positionByCount,
   ] = await Promise.all(promises);
 
+  if (repos === 0) {
+    res.status(404).json({ message: 'Language could not be found.' });
+    return;
+  }
+
   res.json({
     language: {
       language,

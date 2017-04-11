@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './routes/Home';
 import LocationDetail from './routes/LocationDetail';
 import DeveloperDetail from './routes/DeveloperDetail';
+import LanguageDetail from './routes/LanguageDetail';
 
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route path="/location/:location" component={LocationDetail} />
       <Route path="/developer/:developer" component={DeveloperDetail} />
+      <Route path="/language/:language" component={LanguageDetail} />
       <Route component={NotFound} />
     </Switch>
     <Footer />

@@ -7,6 +7,7 @@ import Splash from '../components/Splash';
 import TurkeyMap from '../components/TurkeyMap';
 import UserSearch from '../components/UserSearch';
 import YearRange from '../components/YearRange';
+import LanguageSearch from '../components/LanguageSearch';
 import { filterByYear } from '../redux/modules/location/list';
 import { API_STATUS } from '../util/api';
 import { isLoading } from '../util/stateHelpers';
@@ -41,6 +42,10 @@ const Home = ({ dispatch, location, locations, turkey, topUsers }) => (
 
     <div id="developers">
       <UserSearch topUsers={topUsers} />
+    </div>
+
+    <div id="languages">
+      <LanguageSearch />
     </div>
   </div>
 );

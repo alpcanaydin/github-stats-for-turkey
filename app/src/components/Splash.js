@@ -19,6 +19,10 @@ class Splash extends Component {
     if (/developers/gi.test(this.props.location.search)) {
       this.handleMove('developers');
     }
+
+    if (/languages/gi.test(this.props.location.search)) {
+      this.handleMove('languages');
+    }
   }
 
   /* eslint-disable class-methods-use-this */
@@ -63,6 +67,13 @@ class Splash extends Component {
                 className="button is-primary is-medium"
               >
                 Geliştirici İstatistikleri
+              </button>
+
+              <button
+                onClick={() => this.handleMove('languages')}
+                className="button is-primary is-medium"
+              >
+                Dil İstatistikleri
               </button>
             </p>
           </div>
