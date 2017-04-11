@@ -50,3 +50,9 @@ Eğer sadece `React` uygulamasında geliştirme yapacaksanız uygulamayı aşağ
 ```bash
 REACT_APP_API_URL=https://github-stats.alpcanaydin.com yarn start
 ```
+
+# Katkıda Bulunanlar
+
+* [@unexge](https://github.com/unexge)
+* [@hsnaydd](https://github.com/hsnaydd)
+* [@gokmen](https://github.com/gokmen)
