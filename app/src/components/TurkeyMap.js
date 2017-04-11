@@ -45,6 +45,16 @@ class TurkeyMap extends Component {
   }
 
   componentWillMount() {
+    this.updateCities();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.stats !== this.props.stats) {
+      this.updateCities();
+    }
+  }
+
+  updateCities() {
     const cities = svgCities.map(city => ({
       ...city,
       ...this.populateCity(city.id),
@@ -67,7 +77,7 @@ class TurkeyMap extends Component {
     }
 
     return {
-      fill: city.topLanguage ? this.languages[city.topLanguage.toLowerCase()] : '#868e96',
+      fill: city.topLanguage ? this.languages[city.topLanguage.toLowerCase()] || '#868e96' : '#868e96',
       topLanguage: city.topLanguage,
       users: city.users,
       repos: city.repos,
@@ -94,10 +104,11 @@ class TurkeyMap extends Component {
   }
 
   render() {
+    const { loading } = this.props;
     const { cities, hoveredCity } = this.state;
 
     return (
-      <div className="svgContainer">
+      <div className={`svgContainer ${loading ? 'is-loading' : ''}`}>
         {hoveredCity.city &&
           <CityTooltip city={hoveredCity.city} top={hoveredCity.top} left={hoveredCity.left} />}
         <svg
@@ -124,6 +135,7 @@ class TurkeyMap extends Component {
 TurkeyMap.propTypes = {
   dispatch: PropTypes.func.isRequired,
   stats: PropTypes.array.isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
 export default connect()(TurkeyMap);

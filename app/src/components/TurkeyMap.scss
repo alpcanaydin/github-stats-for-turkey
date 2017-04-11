@@ -1,3 +1,18 @@
+.is-loading {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(255, 255, 255, .8);
+    z-index: 5;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .svgContainer {
     margin: 0 auto;
