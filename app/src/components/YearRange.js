@@ -33,7 +33,7 @@ class YearRange extends Component {
   }
 
   render() {
-    const { disabled, min, max } = this.props;
+    const { disabled } = this.props;
     const { buttonDisabled } = this.state;
 
     return (
@@ -47,8 +47,6 @@ class YearRange extends Component {
               <input
                 type="number"
                 className="input"
-                min={min}
-                max={this.state.value.max - 1}
                 value={this.state.value.min}
                 onChange={this.updateValue('min')}
               />
@@ -61,8 +59,6 @@ class YearRange extends Component {
               <input
                 type="number"
                 className="input"
-                min={this.state.value.min + 1}
-                max={max}
                 value={this.state.value.max}
                 onChange={this.updateValue('max')}
               />
