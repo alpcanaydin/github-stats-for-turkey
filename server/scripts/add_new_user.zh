@@ -1,0 +1,13 @@
+#!/bin/bash
+username=$1
+if [ -z "$username" ]
+	then
+	echo "error!"
+	exit 1
+fi
+node bin/userFetch.js $username
+node bin/saveUserStars.js $username
+node bin/saveRepoCities.js $username
+node bin/saveUserScores.js $username
+node bin/updateLocations.js
+echo "all done!"
