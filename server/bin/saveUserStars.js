@@ -7,9 +7,13 @@ const usersCollection = db.get('users');
 const reposCollection = db.get('repos');
 
 const main = async () => {
-  const pipeline = { $group: { _id: '$user', stars: { $sum: '$stars' } } };
+  let pipeline
+  if(process.argv.length >= 3){ // for new user
+    pipeline = [{$match: {user:process.argv[2]}},{ $group: { _id: '$user', stars: { $sum: '$stars' } } }];  
+  }else{
+    pipeline = { $group: { _id: '$user', stars: { $sum: '$stars' } } };
+  }
   const response = await reposCollection.aggregate(pipeline);
-
   const bulkOperations = [];
 
   response.forEach(userStar => {
