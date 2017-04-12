@@ -11,7 +11,7 @@ const synonyms = {
 const cityNormalizer = query => {
   const city = query.split(' ')[0].replace('location:', '');
   const normalized = city
-    .replace(",", "") // ex : Istanbul, Turkey
+    .replace(',', '')
     .replace(/İ/g, 'i')
     .replace(/ı/g, 'i')
     .replace(/ç/g, 'c')

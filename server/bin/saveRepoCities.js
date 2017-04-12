@@ -7,11 +7,14 @@ const usersCollection = db.get('users');
 const reposCollection = db.get('repos');
 
 const main = async () => {
-  let usersWithRepo
+  let usersWithRepo;
 
-  if(process.argv.length >= 3){
-    usersWithRepo = await usersCollection.find({ username:process.argv[2],publicRepos: { $gt: 0 } });
-  }else{
+  if (process.argv.length >= 3) {
+    usersWithRepo = await usersCollection.find({
+      username: process.argv[2],
+      publicRepos: { $gt: 0 },
+    });
+  } else {
     usersWithRepo = await usersCollection.find({ publicRepos: { $gt: 0 } });
   }
 

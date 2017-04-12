@@ -15,7 +15,6 @@ const main = async () => {
 
   const queries = createUserSearchQueries();
   const promises = [];
-
   queries.forEach(query => promises.push(github.searchUsers(query)));
   const users = await Promise.all(promises);
   const response = users.reduce((prev, cur) => [...prev, ...cur], []);
