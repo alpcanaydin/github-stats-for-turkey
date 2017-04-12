@@ -7,7 +7,11 @@ const getPositionAgg = require('../aggs/language/getPosition');
 const getPositionByCountAgg = require('../aggs/language/getPositionByCount');
 
 module.exports = async (req, res) => {
-  const language = req.params.language;
+  let language = req.params.language;
+
+  if (language === 'C-Sharp') {
+    language = 'C#';
+  }
 
   const promises = [
     reposAgg(req.db, language),
