@@ -7,7 +7,16 @@ const usersCollection = db.get('users');
 const reposCollection = db.get('repos');
 
 const main = async () => {
-  const usersWithRepo = await usersCollection.find({ publicRepos: { $gt: 0 } });
+  let usersWithRepo;
+
+  if (process.argv.length >= 3) {
+    usersWithRepo = await usersCollection.find({
+      username: process.argv[2],
+      publicRepos: { $gt: 0 },
+    });
+  } else {
+    usersWithRepo = await usersCollection.find({ publicRepos: { $gt: 0 } });
+  }
 
   const bulkOperations = [];
 
@@ -21,7 +30,6 @@ const main = async () => {
   });
 
   await reposCollection.bulkWrite(bulkOperations);
-
   const query = { stars: { $exists: false } };
   const update = { $set: { stars: 0 } };
   const options = { multi: true };

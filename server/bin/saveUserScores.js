@@ -6,7 +6,12 @@ const db = monk(config.mongodb);
 const usersCollection = db.get('users');
 
 const main = async () => {
-  const users = await usersCollection.find({});
+  let users;
+  if (process.argv.length >= 3) {
+    users = await usersCollection.find({ username: process.argv[2] });
+  } else {
+    users = await usersCollection.find({});
+  }
 
   const promises = [];
 
