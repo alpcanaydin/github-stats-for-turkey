@@ -15,15 +15,13 @@ const configureStore = (preloadedState, history) => {
 
   const composed = [applyMiddleware(...middlewares)];
 
-  if (process.env.NODE_ENV === 'development') {
-    /* eslint-disable */
-    if (window.navigator.userAgent.includes('Chrome')) {
-      composed.push(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-    }
-    /* eslint-enable */
-  }
+    /*eslint-disable */
+  const composeSetup = process.env.NODE_ENV !== 'production' && typeof window === 'object' &&  
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose
+  /*eslint-enable */
 
-  const store = createStore(rootReducer, preloadedState, compose(...composed));
+  const store = createStore(rootReducer, preloadedState, composeSetup(...composed));
 
   if (process.env.NODE_ENV === 'development' && module.hot) {
     module.hot.accept('./modules', () => {
