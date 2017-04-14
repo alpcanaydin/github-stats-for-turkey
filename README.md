@@ -16,7 +16,7 @@ https://alpcanaydin.github.io/github-stats-for-turkey
 
 # Kurulum
 
-Bilgisayarınızda `Node.js v7` kurulu olması gerekmektedir.
+Bilgisayarınızda `Node.js v7.7^` kurulu olması gerekmektedir.
 
 Bu repoyu clone'ladıktan sonra `server` klasörü içinde bulunan `config.json.example` dosyasını `config.json` olarak kopyalayıp içine gerekli bilgileri ekleyin. Daha sonra `server` klasöründe sırasıyla aşağıdaki komutları çalıştırın.
 

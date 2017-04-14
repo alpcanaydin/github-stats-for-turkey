@@ -1,7 +1,7 @@
 {
   "tokens": [
     "abcdef",
-    "ghefkl
+    "ghefkl"
   ],
   "mongodb": "192.168.33.10:27017/github-stats-for-turkey"
 }
